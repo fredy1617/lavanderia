@@ -35,7 +35,7 @@ $Listos = mysqli_fetch_array(mysqli_query($conn,"SELECT count(*) FROM servicios 
 			<li><a href="#precios" class="black-text modal-trigger"><i class="material-icons">attach_money</i>Precios</a></li>
 			<li><a href="crear_cliente.php" class="black-text"><i class="material-icons">add</i>Nuevo Cliente</a></li>
 			<li><a href="clientes.php" class="black-text"><i class="material-icons">list</i>Clientes</a></li>
-			<li><a href="reporte.php" class="black-text"><i class="material-icons">playlist_add_check</i>Reporte</a></li>
+			<li><a href="reportes.php" class="black-text"><i class="material-icons">playlist_add_check</i>Reportes</a></li>
  		</ul>
       </ul>
       <ul class="right hide-on-med-and-down">
@@ -93,7 +93,7 @@ $Listos = mysqli_fetch_array(mysqli_query($conn,"SELECT count(*) FROM servicios 
 		      					  <li><a href="#precios" class="modal-trigger"><i class="material-icons">attach_money</i>Precios</a></li>
 								  <li><a href="crear_cliente.php"><i class="material-icons">add</i>Nuevo Cliente</a></li>
 								  <li><a href="clientes.php"><i class="material-icons">list</i>Clientes</a></li>
-								  <li><a href="reporte.php"><i class="material-icons">playlist_add_check</i>Reporte</a></li>
+								  <li><a href="reportes.php"><i class="material-icons">playlist_add_check</i>Reportes</a></li>
 					    		</ul>
 					          </span>
 		      			  </div>    			
