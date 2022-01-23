@@ -88,7 +88,7 @@ if ($cont_sql['cont'] == 2) {
   while($tmp = mysqli_fetch_array($cont_sql2)){
     $Suma = $Suma+$tmp['cantidad'];
   }
-  $Descuento = $Suma*0.15;
+  $Descuento = $Suma*0.03;
 }else{
   $Descuento = 0;
 }

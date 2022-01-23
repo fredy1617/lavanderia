@@ -11,7 +11,6 @@ $valorNombre = $conn->real_escape_string($_POST["valorNombre"]);
 $valorUserName = $conn->real_escape_string($_POST["valorUsuario"]);
 $valorCargo = $conn->real_escape_string($_POST["valorCargo"]);
 $valorUserPassword = $conn->real_escape_string($_POST['valorContra']);
-$valorUserTelefono = $conn->real_escape_string($_POST['valorTelefono']);
 
 if ($valorUserPassword == 'No') {
     $Pass = '';
@@ -26,10 +25,9 @@ $valorNombre = str_replace($caracteres_malos, $caracteres_buenos, $valorNombre);
 $valorUserName = str_replace($caracteres_malos, $caracteres_buenos, $valorUserName);
 $valorCargo = str_replace($caracteres_malos, $caracteres_buenos, $valorCargo);         
 $valorRol = $conn->real_escape_string($_POST['valorRol']);
-$valorUserTelefono = str_replace($caracteres_malos, $caracteres_buenos, $valorUserTelefono);
 // Se encripta el la contraseña del usuario con la función password_hash(), y retorna una cadena de 60 caracteres
 					
-$sql = "UPDATE usuarios SET usuario = '$valorUserName', nombre = '$valorNombre', cargo = '$valorCargo', rol = '$valorRol', telefono = '$valorUserTelefono' ".$Pass." WHERE id='$valorId'";
+$sql = "UPDATE usuarios SET usuario = '$valorUserName', nombre = '$valorNombre', cargo = '$valorCargo', rol = '$valorRol' ".$Pass." WHERE id='$valorId'";
     if(mysqli_query($conn, $sql)){
         echo '<script>M.toast({html:"El usuario se actualizó correctamente.", classes: "rounded"})</script>';
         ?>
