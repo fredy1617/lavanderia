@@ -57,7 +57,7 @@
                 <input id="fecha" type="date" >
             </div>
             <br>
-            <div class="col s10 l3 m3 right">
+            <div class="col s6 l3 m3 right">
               <button class="btn waves-light waves-effect indigo darken-1" onclick="buscar_pagos(1);"><i class="material-icons prefix right">send</i>BUSCAR</button>
             </div>           
           </div>
